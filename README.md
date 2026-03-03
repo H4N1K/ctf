@@ -32,3 +32,9 @@ echo
 python3 -m venv venv
 source venv/bin/activate
 pip install pyotp
+
+
+
+
+curl -s -H "Authorization: Bearer $TOKEN2" \
+"https://10-81-118-246.reverse-proxy.cell-prod-eu-west-1b.vm.tryhackme.com/profile"
