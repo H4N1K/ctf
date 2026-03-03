@@ -27,3 +27,8 @@ curl -s -X POST -H "Content-Type: application/json" \
 --data-binary "{\"temp_token\":\"$TEMP\",\"otp_code\":\"$OTP\",\"device_fingerprint\":null}" \
 "$BASE/verify-otp"
 echo
+
+
+python3 -m venv venv
+source venv/bin/activate
+pip install pyotp
